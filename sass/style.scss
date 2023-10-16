@@ -1,25 +1,40 @@
 
 //abstracts
-@import "abstracts/mixins";
-@import "abstracts/variables";
+/* @use "abstracts/mixins"; */
+/* @use "abstracts/variables"; */
+/* @use "abstracts/index"; */
+
 
 //base
-@import "base/typography";
+/* @use "base/typography"; */
+/* @use "base/index"; */
+
 
 //components
-@import "components/buttons";
-@import "components/images";
-@import "components/index";
+/* @use "components/buttons"; */
+/* @use "components/images"; */
+/* @use "components/index"; */
 
 //layout
-@import "layout/footer";
-@import "layout/header";
-@import "layout/navbar";
-@import "layout/index";
+/* @use "layout/navbar";
+@use "layout/header"; 
+@use "layout/section"; 
+@use "layout/footer";  */
+/* @use "layout/index"; */
 
 //pages
-@import "pages/home";
-@import "pages/index";
+/* @use "pages/home"; */
+/* @use "pages/index"; */
+
+@use "./abstracts";
+ 
+@use "./base";
+ 
+@use "./components";
+ 
+@use "./layout";
+ 
+@use "./pages";
 
 
 
