@@ -1,0 +1,11 @@
+#cornerBlur{
+    position: absolute;
+    
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    filter: blur(200px);
+}
+

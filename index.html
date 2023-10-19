@@ -6,22 +6,53 @@
     <title>Figma Project</title>
     <link rel="stylesheet" href="./sass/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+      .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #ccc;
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      </style>
+
+
 
   </head>
   <body>
     
 
 
-      <nav class="navbar navbar-expand-lg bg-white mt-4">
+      <nav class="navbar navbar-expand-lg bg-white mt-4" id="top">
+        <div id="cornerBlur"></div>
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="images/Group 1.jpg" alt="company-logo"></a>
+          <a class="navbar-brand" href="#"><img src="images/company_logo.jpg" alt="company-logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse mx-5 id="navbarNavDropdown">
+          <div class="collapse navbar-collapse mx-5" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item mx-3">
-                <a class="nav-link active text-black" aria-current="page" href="#">Crytocurrency</a>
+                <a class="nav-link actively text-black" aria-current="page" href="#">Crytocurrency</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link text-black" href="#">Exchanges</a>
@@ -63,16 +94,17 @@
 
 <!-- HEADER KISMI -->
       <header>
+       <div id="cornerBlurTwo"></div>
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col">
-              <div >
+              <div class="px-5">
               <p>SIGN UP TODAY</p>
-              <h1>The World’s <span>Fastest Growing 
+              <h1 class="my-4 fw-bolder">The World’s <span>Fastest Growing 
                 Crypto Web App</span></h1>
-                <p>Buy and sell 200+ cryptocurrencies with 20+ flat currencies using bank transfers or your credit/debit card.</p>
+                <p class="opacity-75 mb-5">Buy and sell 200+ cryptocurrencies with 20+ flat currencies using bank transfers or your credit/debit card.</p>
+                <div class="d-grid gap-3 d-sm-flex justfy-content-sm-center justify-content-xl-start ">
                 <button type="button" class="btn btn-primary rounded-5 px-5 py-2" >Get Started</button>
-                <!-- <button type="button" class="btn btn-outline-primary rounded-5 px-5 py-2">Download App</button> -->
                 <button type="button" class=" dropdown btn btn-outline-primary rounded-5 px-5 py-2">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Download App
@@ -82,6 +114,7 @@
                     <li><a class="dropdown-item" href="#">IOS</a></li>
                   </ul>
                 </button>
+              </div>
               </div>
             </div>
             <div class="col">
@@ -97,10 +130,13 @@
         <div class="container">
           <div class="row">
             <div class="col">
+              <div class="d-flex justify-content-between ">
               <p>🔥 Trending</p>
+              <a href="#"><p>More></p></a>
+              </div> 
 
               <table width="350" >
-                <thead>
+                <thead class="opacity-75">
                   <tr>
                     <th>Name</th>
                     <th>Price</th>                   
@@ -134,11 +170,12 @@
 
             </div>
             <div class="col">
-
+              <div class="d-flex justify-content-between">
               <p>🚀 Top Gainers</p>
-
+              <a href="#">More></a>
+              </div>
               <table width="350" >
-                <thead>
+                <thead class="opacity-75">
                   <tr>
                     <th>Name</th>
                     <th>Price</th>                   
@@ -173,13 +210,12 @@
 
             </div>
             <div class="col">
-
-
-
+              <div class="d-flex justify-content-between">
               <p>💎 Recently Added</p>
-
+              <a href="#">More></a>
+              </div>
               <table width="350" >
-                <thead>
+                <thead class="opacity-75">
                   <tr>
                     <th>Name</th>
                     <th>Price</th>                   
@@ -227,25 +263,39 @@
             <div class="col">
               <h2 class="fw-bolder">Buy & trade on the original crypto exchange.</h2>
               <p class="opacity-75">Buy now and get 40% extra bonus Minimum pre-sale amount 25 Crypto Coin. We accept BTC crypto-currency</p>
-              
-              <form action="https://formsubmit.co/byzkrdn1999@gmail.com" method="POST">
-                <div class="input-group mb-3">
-                  <span class="input-group-text">Amount</span>
-                  <input type="text" aria-label="First name" class="form-control" placeholder="5,000">
+              <br>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="page-input-one">
+                  <form action="#">
+                    <input type="number" placeholder="Amount " class="mb-4" />
+                    <input type="number" placeholder="Get" />
+                  </form>
                 </div>
-                <div class="input-group mb-3">
-                  <span class="input-group-text">Get</span>
-                  <input type="text" aria-label="First name" class="form-control" placeholder="5,000">
+                <div class="page-input-two">
+                  <form action="#">
+                    <select name="#" id="#" class="mb-4">
+                      <option>USD</option>
+                      <option><img src="#" alt="#" />EURO</option>
+                      <option><img src="#" alt="#" />GBP</option>
+                      <option><img src="#" alt="#" />GR</option>
+                      <option><img src="#" alt="#" />KWD</option>
+                      <option><img src="#" alt="#" />INR</option>
+                    </select>
+                    <select name="#" id="#">
+                      <option><img src="#" alt="#" />BTC</option>
+                      <option><img src="#" alt="#" />BNB</option>
+                      <option><img src="#" alt="#" />ETH</option>
+                      <option><img src="#" alt="#" />Dai</option>
+                      <option><img src="#" alt="#" />BNB</option>
+                      <option><img src="#" alt="#" />USDT</option>
+                    </select>
+                  </form>
                 </div>
-              </form>
-
-
-
+              </div>
             </div>
             <div class="col">
               <img class="img-fluid" src="images/moneybox.jpg" alt="moneybox">
             </div>
-
           </div>
         </div>
       </section>
@@ -370,16 +420,97 @@
 
       <!-- BAŞLARKEN İŞLEM ADIMLARI -->
 
-      <section>
+      <section class="my-5">
         <div class="container">
-          <div class="row">
+          <div class="row  text-center">
             <div class="col">
-              <h2>Get started in just a few minutes</h2>
+              <h2 class="fw-bolder">Get started in just a few minutes</h2>
             </div>
           </div>
-          <div class="row">
+          <div class="row justify-content-center align-items-center text-center">
+            <div class="col-2">
+              <img src="images/sign_up.jpg" alt="sign_up">
+              <h2>Sign Up</h2>
+              <p class="opacity-75">Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to friends</p>
+            </div>
+            
+            <div class="col-3">
+              <img class="img-fluid" src="images/arrow.jpg" alt="arrow">
+            </div>
+
+            <div class="col-2">
+              <img src="images/fund.jpg" alt="sign_up">
+              <h2>Fund</h2>
+              <p class="opacity-75">Choose your preferred payment method such as bank transfer or credit card to top up your NEFA Wallet</p>
+            </div>
+            
+            <div class="col-3">
+              <img class="img-fluid" src="images/arrow.jpg" alt="arrow">
+            </div>
+
+            <div class="col-2">
+              <img src="images/buy_crypto.jpg" alt="sign_up">
+              <h2>Buy Crypto</h2>
+              <p class="opacity-75">Sign up for your free NEFA Wallet on web, iOS or Android and follow our easy process to set up your profile</p>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- ACAORDION SIK SORULAN SORULAR KISMI -->
+
+      <section>
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+
             <div class="col">
-              <img src="" alt="">
+              <img src="images/asked_questions.jpg" alt="asked_questions">
+            </div>
+
+            <div class="col">
+              <p>SUPPORT</p>
+              <h2 class="fw-bolder">Frequently asked questions</h2>
+
+              <button class="accordion"><h5>Why should I choose NEFA?</h5></button>
+              <div class="panel">
+              <p>We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over 8 million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.</p>
+              </div>
+
+              <button class="accordion"><h5>How secure is NEFA?</h5></button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+
+              <button class="accordion"><h5>How secure is NEFA?</h5></button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+
+              <button class="accordion"><h5>How do I actually buy Bitcoin?</h5></button>
+              <div class="panel">
+              <p>We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over 8 million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.</p>
+              </div>
+              
+
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+<!-- YUKARI BUTONU -->
+      <section class="my-5">
+        <div class="container">
+          <div class="row justify-content-center align-items-center text-center">
+            <div class="col">
+              <a href="#top"><button type="button" class="btn btn-secondary">Back to top <i class="bi bi-arrow-up"></i></button></a>
             </div>
           </div>
         </div>
@@ -388,7 +519,83 @@
 
 
 
+<!-- FOOTER -->
+      <!-- <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="images/company_logo.jpg" alt="">
+            </div>
+            <div class="col-2">
+              
+              <p><a href="#">Buy Crypto</a></p>
+              <li>Watchlist</li>
+              <li>Portfolio</li>
+              <li>NFT</li>
 
+            </div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+      </section> -->
+
+
+      <footer class="footer">
+      <div class="container">
+        <div class="column ">
+          <img class="logo" src="./images/company_logo.jpg" alt="NEFA">
+        </div>
+        <div class="column">
+          <ul class="list-unstyled">
+            <li><a href="#">Buy Crypto</a></li>
+            <li><a href="#">Exchanges</a></li>
+            <li><a href="#">Watchlist</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">NFT</a></li>
+
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="list-unstyled">
+            <li><a href="#">Buy Crypto</a></li>
+            <li><a href="#">Exchanges</a></li>
+            <li><a href="#">Watchlist</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">NFT</a></li>
+   
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="list-unstyled">
+      
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <div class="form-group">
+            <label class="newsletter"for="email">Newsletter</label>
+            <p>Never miss anything crypto<br> when you're on the go</p>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <button type="submit" class="btn btn-footer "><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7929 5.79289C13.1834 5.40237 13.8166 5.40237 14.2071 5.79289L18.2071 9.79289C18.5976 10.1834 18.5976 10.8166 18.2071 11.2071L14.2071 15.2071C13.8166 15.5976 13.1834 15.5976 12.7929 15.2071C12.4024 14.8166 12.4024 14.1834 12.7929 13.7929L15.0858 11.5H3.5C2.94772 11.5 2.5 11.0523 2.5 10.5C2.5 9.94772 2.94772 9.5 3.5 9.5H15.0858L12.7929 7.20711C12.4024 6.81658 12.4024 6.18342 12.7929 5.79289Z" fill="white"/>
+            </svg></button>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <script src="acordion.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 

@@ -1,0 +1,17 @@
+@mixin center-input {
+    width: 11rem;
+    height: 3rem;
+    border-radius: 1rem;
+    text-align: end;
+    border: solid blue;
+  }
+  
+  @mixin big-input {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+    text-align: start;
+    /* border: solid var(--GRA-Blue2, #3984f4); */
+    border: solid blue;
+
+  }

@@ -1,0 +1,12 @@
+
+@use "../../abstracts/mixins";
+@use "../../abstracts/variables";
+
+
+
+.page-input-two select {
+    @include mixins.center-input;
+  }
+  .page-input-one input {
+    @include mixins.big-input;
+  }
