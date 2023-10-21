@@ -33,6 +33,7 @@
         overflow: hidden;
         transition: max-height 0.2s ease-out;
       }
+
       </style>
 
 
@@ -93,17 +94,17 @@
       </nav>
 
 <!-- HEADER KISMI -->
-      <header>
+      <header class="mb-5">
        <div id="cornerBlurTwo"></div>
         <div class="container">
           <div class="row align-items-center justify-content-center">
-            <div class="col">
-              <div class="px-5">
+            <div class="col-lg-6">
+              <div class="px-5 mt-5 text-center text-xl-start">
               <p>SIGN UP TODAY</p>
-              <h1 class="my-4 fw-bolder">The World’s <span>Fastest Growing 
+              <h1 class="my-4 fw-bolder">The World’s <span><br>Fastest Growing 
                 Crypto Web App</span></h1>
                 <p class="opacity-75 mb-5">Buy and sell 200+ cryptocurrencies with 20+ flat currencies using bank transfers or your credit/debit card.</p>
-                <div class="d-grid gap-3 d-sm-flex justfy-content-sm-center justify-content-xl-start ">
+                <div class="d-grid gap-3 d-sm-flex justfy-content-sm-center justfy-content-md-center justify-content-xl-start  ">
                 <button type="button" class="btn btn-primary rounded-5 px-5 py-2" >Get Started</button>
                 <button type="button" class=" dropdown btn btn-outline-primary rounded-5 px-5 py-2">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,25 +118,27 @@
               </div>
               </div>
             </div>
-            <div class="col">
-              <img class="img-fluid" src="images/first-image.jpg" alt="bitcoin-world">
+            <div class="col-lg-6 d-none d-xl-block">
+              <img class="img-fluid" src="images/btc-world.jpg" alt="bitcoin-world">
             </div>
           </div>
         </div>
       </header>
 
+      
+
       <!-- TABLO BULUNAN SECTION -->
 
-      <section>
+      <section class="my-4">
         <div class="container">
-          <div class="row">
-            <div class="col">
+          <div class="row gx-5  ">
+            <div class="col col-sm-12 col-xl-4">
               <div class="d-flex justify-content-between ">
               <p>🔥 Trending</p>
               <a href="#"><p>More></p></a>
               </div> 
-
-              <table width="350" >
+              <div class="mb-5">
+              <table width="400" height="250" >
                 <thead class="opacity-75">
                   <tr>
                     <th>Name</th>
@@ -166,15 +169,18 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
 
 
             </div>
-            <div class="col">
+            <div class="col col-sm-12 col-xl-4">
               <div class="d-flex justify-content-between">
               <p>🚀 Top Gainers</p>
               <a href="#">More></a>
               </div>
-              <table width="350" >
+              
+              <div class="mb-5">
+              <table width="400" height="250">
                 <thead class="opacity-75">
                   <tr>
                     <th>Name</th>
@@ -205,16 +211,19 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
 
 
 
             </div>
-            <div class="col">
+            <div class="col col-sm-12 col-xl-4">
               <div class="d-flex justify-content-between">
               <p>💎 Recently Added</p>
               <a href="#">More></a>
               </div>
-              <table width="350" >
+
+              <div class="mb-5">
+              <table width="400" height="250" >
                 <thead class="opacity-75">
                   <tr>
                     <th>Name</th>
@@ -245,6 +254,7 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
 
 
 
@@ -260,7 +270,14 @@
       <section>
         <div class="container">
           <div class="row align-items-center justify-content-center">
-            <div class="col">
+
+            <div class="col order-sm-1 order-lg-2 order-xl-2 order-md-2 ">
+              <img class="img-fluid" src="images/moneybox.jpg" alt="moneybox">
+            </div>
+
+
+
+            <div class="col order-sm-2 order-lg-1 order-xl-1 order-md-1 ">
               <h2 class="fw-bolder">Buy & trade on the original crypto exchange.</h2>
               <p class="opacity-75">Buy now and get 40% extra bonus Minimum pre-sale amount 25 Crypto Coin. We accept BTC crypto-currency</p>
               <br>
@@ -273,13 +290,16 @@
                 </div>
                 <div class="page-input-two">
                   <form action="#">
-                    <select name="#" id="#" class="mb-4">
-                      <option>USD</option>
+                    <select name="#" id="#" class="mb-4 d-flex">
+                      <option>
+                        <img class="currency-flag" src="images/america_flag.png" alt="USD Flag" /> 
+                        USD
+                      </option>
                       <option><img src="#" alt="#" />EURO</option>
                       <option><img src="#" alt="#" />GBP</option>
                       <option><img src="#" alt="#" />GR</option>
                       <option><img src="#" alt="#" />KWD</option>
-                      <option><img src="#" alt="#" />INR</option>
+                      <option><img src="#" alt="#" />INR</option> 
                     </select>
                     <select name="#" id="#">
                       <option><img src="#" alt="#" />BTC</option>
@@ -292,10 +312,13 @@
                   </form>
                 </div>
               </div>
+              <div class="d-flex justify-content-center align-items-center mt-5 ">
+              <button type="button" class="btn btn-primary btn-lg rounded-5 px-5">Buy Now</button>
+              </div>
             </div>
-            <div class="col">
+            <!-- <div class="col order-sm-1">
               <img class="img-fluid" src="images/moneybox.jpg" alt="moneybox">
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -306,26 +329,26 @@
 
       <section class="my-5">
         <div class="container">
-          <div class="row text-center">
+          <div class="row justify-content-center">
             <div class="col">
-              <div>
+              <div class="text-center">
                 <h2>Trusted Partners Worldwide</h2>
                 <p class="opacity-75 my-4">We're partners with countless major organisations around the globe</p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <img src="images/clever_brand.jpg" alt="clever_brand">
+          <div class="row text-center">
+            <div class="col-lg-3 ">
+              <img class="img-fluid" src="images/clever_brand.jpg" alt="clever_brand">
             </div>
-            <div class="col">
-              <img src="images/diamond_brand.jpg" alt="diamond_brand">
+            <div class="col-lg-3 ">
+              <img class="img-fluid" src="images/diamond_brand.jpg" alt="diamond_brand">
             </div>
-            <div class="col">
-              <img src="images/swiss_brand.jpg" alt="swiss_brand">
+            <div class="col-lg-3 ">
+              <img class="img-fluid" src="images/swiss_brand.jpg" alt="swiss_brand">
             </div>
-            <div class="col">
-              <img src="images/gambio_brand.jpg" alt="gambio_brand">
+            <div class="col-lg-3 ">
+              <img class="img-fluid" src="images/gambio_brand.jpg" alt="gambio_brand">
             </div>
           </div>
         </div>
@@ -340,10 +363,10 @@
       <section>
         <div class="container">
           <div class="row justify-content-center align-items-center gx-5">
-            <div class="col">
+            <div class="col-lg-6 col-sm-12 ">
               <img class="img-fluid" src="images/credit_cards.jpg" alt="credit_cards">
             </div>            
-            <div class="col">
+            <div class="col-lg-6 col-sm-12">
               <div class="px-5">
               <h2 class="fw-bolder">Introducing the NEFA Credit Card</h2>
               <p class="opacity-75 my-4">Subject to cardholder and rewards terms which will be available at application.</p>
@@ -367,8 +390,14 @@
       <section class="my-5">
         <div class="container">
           <div class="row justify-content-center align-items-center">
-            <div class="col">
+
+            
+
+
+            <div class="col-lg-6 col-sm-12 order-sm-2 order-md-2 order-xl-1">
+              <div class="text-sm-center text-xl-start ">
               <h2 class="fw-bolder">Advanced Trading Tools</h2>
+              </div>
               <h4 class="mt-4">Professional Access, Non-stop Availability</h4>
               <p>We provide premium access to crypto trading for both individuals and institutions through high liquidity, reliable order execution and constant uptime.</p>
 
@@ -377,14 +406,16 @@
 
               <h4 class="mt-5">Customer Support</h4>
               <p>Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers for partners.</p>
-              <div>
-                <button type="button" class="btn btn-outline-primary rounded-5 px-5 py-2 mt-4">Get Started</button>
-                <a href="#">Learn More</a>
+              <div class="mt-5">
+                <button type="button" class="btn btn-outline-primary rounded-5 px-5 py-2 ">Get Started</button>
+                <a class="mx-2" href="#">Learn More</a>
               </div>
             </div>
-            <div class="col">
+
+            <div class="col-lg-6 col-sm-12 order-sm-1 order-md-1 order-xl-2">
               <img class="img-fluid" src="images/tools.jpg" alt="tools">
-            </div>
+            </div>  
+
           </div>
         </div>
       </section>
@@ -395,10 +426,10 @@
       <section>
         <div class="container">
           <div class="row justify-content-center align-items-center">
-            <div class="col">
-              <img src="images/till.jpg" alt="till">
+            <div class="col-sm-12 col-lg-6 ">
+              <img class="img-fluid" src="images/till.jpg" alt="till">
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-lg-6 ">
 
               <h2 class="fw-bolder">Industry-leading security from day one</h2>
               <h4 class="mt-4">Safety, security and compliance</h4>
@@ -429,7 +460,7 @@
           </div>
           <div class="row justify-content-center align-items-center text-center">
             <div class="col-2">
-              <img src="images/sign_up.jpg" alt="sign_up">
+              <img class="img-fluid" src="images/sign_up.jpg" alt="sign_up">
               <h2>Sign Up</h2>
               <p class="opacity-75">Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to friends</p>
             </div>
@@ -439,7 +470,7 @@
             </div>
 
             <div class="col-2">
-              <img src="images/fund.jpg" alt="sign_up">
+              <img class="img-fluid" src="images/fund.jpg" alt="sign_up">
               <h2>Fund</h2>
               <p class="opacity-75">Choose your preferred payment method such as bank transfer or credit card to top up your NEFA Wallet</p>
             </div>
@@ -449,7 +480,7 @@
             </div>
 
             <div class="col-2">
-              <img src="images/buy_crypto.jpg" alt="sign_up">
+              <img class="img-fluid" src="images/buy_crypto.jpg" alt="sign_up">
               <h2>Buy Crypto</h2>
               <p class="opacity-75">Sign up for your free NEFA Wallet on web, iOS or Android and follow our easy process to set up your profile</p>
             </div>
@@ -457,46 +488,50 @@
 
           </div>
         </div>
-      </section>
+      </section> 
 
 
 
-      <!-- ACAORDION SIK SORULAN SORULAR KISMI -->
+      <!-- ACAORDION ve SIK SORULAN SORULAR KISMI -->
 
       <section>
         <div class="container">
           <div class="row justify-content-center align-items-center">
 
-            <div class="col">
-              <img src="images/asked_questions.jpg" alt="asked_questions">
+            <div class="col-lg-6 col-sm-12">
+              <img class="img-fluid"  src="images/asked_questions.jpg" alt="asked_questions">
             </div>
 
-            <div class="col">
+            <div class="col-lg-6 col-sm-12">
+              <div class="text-sm-center text-lg-start">
               <p>SUPPORT</p>
-              <h2 class="fw-bolder">Frequently asked questions</h2>
 
-              <button class="accordion"><h5>Why should I choose NEFA?</h5></button>
-              <div class="panel">
-              <p>We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over 8 million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.</p>
-              </div>
-
-              <button class="accordion"><h5>How secure is NEFA?</h5></button>
-              <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-
-              <button class="accordion"><h5>How secure is NEFA?</h5></button>
-              <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-
-              <button class="accordion"><h5>How do I actually buy Bitcoin?</h5></button>
-              <div class="panel">
-              <p>We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over 8 million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.</p>
-              </div>
               
+              <h2 class="fw-bolder">Frequently asked questions</h2>
+             
 
+              <button class="accordion bg-white"><h5>Why should I choose NEFA?</h5></button>
+              <div class="panel">
+              <p>We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over 8 million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.</p>
+              </div>
 
+              <button class="accordion bg-white border-top"><h5>How secure is NEFA?</h5></button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+
+              <button class="accordion bg-white border-top"><h5>How secure is NEFA?</h5></button>
+              <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+
+              <button class="accordion bg-white border-top border-bottom"><h5>How do I actually buy Bitcoin?</h5></button>
+              <div class="panel">
+              <p>We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over 8 million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.</p>
+              </div>
+            
+
+            </div>
             </div>
 
           </div>
@@ -542,12 +577,18 @@
       </section> -->
 
 
-      <footer class="footer">
+      <footer class="footer mt-5 ">
       <div class="container">
-        <div class="column ">
+        
+        <div class="row mt-4">
+        <div class="col-2 border border-start-0 border-end-0">
+          <div class="mt-3 ">
           <img class="logo" src="./images/company_logo.jpg" alt="NEFA">
+          </div>
         </div>
-        <div class="column">
+
+        <div class="col-2 border border-start-0">
+          <div class="text-center">
           <ul class="list-unstyled">
             <li><a href="#">Buy Crypto</a></li>
             <li><a href="#">Exchanges</a></li>
@@ -557,7 +598,9 @@
 
           </ul>
         </div>
-        <div class="column">
+        </div>
+        <div class="col-2 border border-start-0">
+          <div class="text-center">
           <ul class="list-unstyled">
             <li><a href="#">Buy Crypto</a></li>
             <li><a href="#">Exchanges</a></li>
@@ -566,8 +609,10 @@
             <li><a href="#">NFT</a></li>
    
           </ul>
+          </div>
         </div>
-        <div class="column">
+        <div class="col-2 border border-start-0 ">
+          <div class="text-center">
           <ul class="list-unstyled">
       
             <li><a href="#">Blog</a></li>
@@ -576,22 +621,35 @@
             <li><a href="#">Careers</a></li>
             <li><a href="#">Help Center</a></li>
           </ul>
-        </div>
-        <div class="column">
-          <div class="form-group">
-            <label class="newsletter"for="email">Newsletter</label>
-            <p>Never miss anything crypto<br> when you're on the go</p>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
           </div>
-          <button type="submit" class="btn btn-footer "><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7929 5.79289C13.1834 5.40237 13.8166 5.40237 14.2071 5.79289L18.2071 9.79289C18.5976 10.1834 18.5976 10.8166 18.2071 11.2071L14.2071 15.2071C13.8166 15.5976 13.1834 15.5976 12.7929 15.2071C12.4024 14.8166 12.4024 14.1834 12.7929 13.7929L15.0858 11.5H3.5C2.94772 11.5 2.5 11.0523 2.5 10.5C2.5 9.94772 2.94772 9.5 3.5 9.5H15.0858L12.7929 7.20711C12.4024 6.81658 12.4024 6.18342 12.7929 5.79289Z" fill="white"/>
-            </svg></button>
+        </div>
+        
+        <div class="col-4 border border-start-0 border-end-0">
+          <div class="row mt-3 ">
+          <!-- <div class="mt-3 deneme"> -->
+          <p>Newsletter</p>
+          <p>Never miss anything crypto when <br> you're on the go</p>
+          <!-- </div> -->
+          <div class="form-group d-flex  ">
+            <input type="email" class="form-control rounded-4" id="email" placeholder="Enter your email">
+            <button type="button" class="btn btn-primary mx-1 px-3 rounded-4">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+          </div>
+        </div> 
+        
+      
+      </div>
+      
+      </div>
+
+      <div class="row text-center mt-5">
+        <div class="col">
+          <p>© Beyza Nur Karadana 2023 NEFA LLC. All rights reserved</p>
         </div>
       </div>
     </footer>
-
-
-
 
 
 
