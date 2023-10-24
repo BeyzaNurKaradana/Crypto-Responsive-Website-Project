@@ -17,8 +17,25 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* font-family: Poppins; */
+    color: transparent;
     
   }
+
+  .Star_header{
+    bottom: 450px;
+    left: 450px;
+}
+
+.circle_header{
+    bottom: 80px;
+    left: 80px;
+}
+
+.table_location{
+   position: relative;
+   top: -80px;
+   
+}  
 
   
     .more{
@@ -55,13 +72,13 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      background-color: linear-gradient(169deg, #3984F4 -6.01%, #0CD3FF 36.87%, #2F7CF0 78.04%, #0E65E8 103.77%);
-      opacity: 0.4;
-      z-index: -1;
-    }
+      height: 100%; 
+      background: linear-gradient(169deg, #3984F4 -6.01%, #0CD3FF 36.87%, #2F7CF0 78.04%, #0E65E8 103.77%);
+      opacity: 0.07; 
+      z-index: -1; 
+    }}
     /* background-color: linear-gradient(169deg, #3984F4 -6.01%, #0CD3FF 36.87%, #2F7CF0 78.04%, #0E65E8 103.77%); */
-   }
+   
 
 
    .plus{
@@ -74,4 +91,30 @@
     font-weight:900;
     font-size:20px;
     color:#f4574d ;
+   }
+
+   .section-seventh-cols{
+    padding-left: 50px;
+    padding-right: 50px;
+   }
+
+   .section-seventh-arrow-first{
+    bottom: 250px;
+    left: 430px;
+   }
+
+   .section-seventh-arrow-second{
+    bottom: 250px;
+    left: 870px;
+
+   }
+   
+   .section-eight-cardano{
+    bottom: 30px;
+    left: 530px;
+   }
+
+   .section-eight-dogecoin{
+    bottom: 250px;
+    left: 110px;
    }

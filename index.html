@@ -42,11 +42,11 @@
   <body>
     
 
-
-      <nav class="navbar navbar-expand-lg bg-white mt-4" id="top">
+      <div class="deneme">
+      <nav class="navbar navbar-expand-lg " id="top">
         <div id="cornerBlur"></div>
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="images/company_logo.jpg" alt="company-logo"></a>
+          <a class="navbar-brand" href="#"><img src="images/company_logo.png" alt="company-logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -79,6 +79,7 @@
               </li>
             </ul>
           </div>
+        
 
           <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav gap-3 ">
@@ -92,16 +93,18 @@
           </div>
         </div>
       </nav>
-
+    
 <!-- HEADER KISMI -->
-      <header class="mb-5 deneme">
+      <header class="mb-5 mt-0 position-relative">
        <div id="cornerBlurTwo"></div>
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-6">
+              <!-- <img width="30" height="30" class="Star_header" src="images/Star_header.png" alt="Star_header">
+              <img width="20" height="20" class="circle_header" src="images/circle_header.png" alt="circle_header"> -->
               <div class="px-5 mt-5 text-center text-xl-start">
               <p class="text-primary fw-bolder">SIGN UP TODAY</p>
-              <h1 class="my-4 fw-bolder">The World’s <span class="highlight-words"><br>Fastest Growing </span>
+              <h1 class="my-4 fw-bolder">The World’s <span class="highlight-words"><br>Fastest Growing <br> </span>
                 Crypto Web App</h1>
                 <p class="opacity-75 mb-5">Buy and sell 200+ cryptocurrencies with 20+ flat currencies using bank transfers or your credit/debit card.</p>
                 <div class="d-grid gap-3 d-sm-flex justify-content-center justfy-content-md-center justfy-content-lg-center justify-content-xl-start  ">
@@ -123,18 +126,28 @@
             </div>
           </div>
         </div>
+
+        <div class="position-absolute Star_header">
+          <img width="30" height="30" class="img-fluid" src="images/Star_header.png" alt="Star_header">
+        </div>
+
+        <div class="position-absolute circle_header">
+          <img width="20" height="20" class="img-fluid" src="images/circle_header.png" alt="circle_header">
+        </div>
+
       </header>
+    </div>
 
       
 
       <!-- TABLO BULUNAN SECTION <div class="rounded-5 bg-secondary "> -->
 
-      <section class="mb-4 "> 
+      <section class="mb-4"> 
         <div class="container ">
-          <div class="rounded-5 bg-secondary py-5 ">
+          <div class="rounded-5 bg-white py-5 table_location ">
           <div class="row gx-5 ">
             <div class="col-sm-12 col-lg-4 border-end">
-              <div class="mb-5 text-center text-lg-start">
+              <div class=" text-center text-lg-start">
               <table class="mx-auto" >
                 <thead class="opacity-75">
                   <tr>
@@ -305,8 +318,8 @@
                 <div class="page-input-two">
                   <form action="#">
                     <select name="#" id="#" class="mb-4 d-flex">
-                      <option> USD</option>
-                      <option><img src="#" alt="#" />EURO</option>
+                      <option>USD</option>
+                      <option><div><img src="images/america_flag.png" alt="#" /></div>EURO</option>
                       <option><img src="#" alt="#" />GBP</option>
                       <option><img src="#" alt="#" />GR</option>
                       <option><img src="#" alt="#" />KWD</option>
@@ -462,7 +475,7 @@
 
       <!-- BAŞLARKEN İŞLEM ADIMLARI -->
 
-      <section class="my-5 py-5 section-seventh">
+      <section class="my-5 py-5 section-seventh position-relative">
         <div class="container">
           <div class="row  text-center">
             <div class="col">
@@ -470,34 +483,48 @@
             </div>
           </div>
           <div class="row justify-content-center align-items-center text-center">
-            <div class="col-2">
+            <div class="col">
+              <div class="section-seventh-cols">
               <img class="img-fluid" src="images/sign_up.png" alt="sign_up">
               <h2>Sign Up</h2>
               <p class="opacity-75">Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to friends</p>
             </div>
-            
-            <div class="col-3">
-              <img class="img-fluid" src="images/arrow.jpg" alt="arrow">
             </div>
+            
+            <!-- <div class="col-3">
+              <img class="img-fluid" src="images/arrow.png" alt="arrow">
+            </div> -->
 
-            <div class="col-2">
+            <div class="col">
+              <div class="section-seventh-cols">
               <img class="img-fluid" src="images/fund.png" alt="sign_up">
               <h2>Fund</h2>
               <p class="opacity-75">Choose your preferred payment method such as bank transfer or credit card to top up your NEFA Wallet</p>
             </div>
-            
-            <div class="col-3">
-              <img class="img-fluid" src="images/arrow.jpg" alt="arrow">
             </div>
+            
+            <!-- <div class="col-3">
+              <img class="img-fluid" src="images/arrow.png" alt="arrow">
+            </div -->
 
-            <div class="col-2">
+            <div class="col">
+              <div class="section-seventh-cols">
               <img class="img-fluid" src="images/buy_crypto.png" alt="sign_up">
               <h2>Buy Crypto</h2>
               <p class="opacity-75">Sign up for your free NEFA Wallet on web, iOS or Android and follow our easy process to set up your profile</p>
             </div>
+            </div>
 
 
           </div>
+        </div>
+
+
+
+        <div>
+          <img class=" img-fluid section-seventh-arrow-first position-absolute" src="images/arrow.png" alt="arrow">
+          <img class=" img-fluid section-seventh-arrow-second position-absolute" src="images/arrow.png" alt="arrow">
+
         </div>
       </section> 
 
@@ -505,7 +532,7 @@
 
       <!-- ACAORDION ve SIK SORULAN SORULAR KISMI -->
 
-      <section>
+      <section class="position-relative">
         <div class="container">
           <div class="row justify-content-center align-items-center">
 
@@ -546,6 +573,14 @@
             </div>
 
           </div>
+        </div>
+
+        <div class="position-absolute section-eight-cardano">
+          <img class="img-fluid" src="images/cardano_coin.png" alt="cardano">
+        </div>
+
+        <div class="position-absolute section-eight-dogecoin">
+          <img class="img-fluid" src="images/dogecoin.png" alt="dogecoin">
         </div>
       </section>
 
