@@ -14,5 +14,16 @@ var acc = document.getElementsByClassName("accordion");
         }
 
 
-
+        document.addEventListener("DOMContentLoaded", function () {
+          const select = document.querySelector("select");
+          const options = select.querySelectorAll("option");
         
+          options.forEach((option) => {
+            const imageSrc = option.getAttribute("data-image");
+            if (imageSrc) {
+              const image = document.createElement("img");
+              image.setAttribute("src", imageSrc);
+              option.insertBefore(image, option.firstChild);
+            }
+          });
+        });
