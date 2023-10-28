@@ -14,7 +14,7 @@
     .header-button{
         /* border-radius: 48px; */
         width: 200px;
-        height: 50px;
+        height: auto;
         @media (max-width: 991px){
             width: 500px;
             height: 60px;
@@ -38,3 +38,8 @@
       margin: 5px;
     }
   }
+
+  .header-section{
+    width: 100%;
+    min-height: 700px;
+  } 

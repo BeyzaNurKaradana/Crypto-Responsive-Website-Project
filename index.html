@@ -43,8 +43,9 @@
     
 
       <div class="deneme">
-      <nav class="navbar navbar-expand-lg" id="top">
+      <nav class="navbar navbar-expand-lg" >
         <div class="container">
+          <div id="cornerBlur"></div>
             <img src="images/company_logo.png" class="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -86,7 +87,7 @@
     </nav>
     
 <!-- HEADER KISMI -->
-      <header class="mb-5 mt-0 ">
+      <header class="mb-5 mt-0 header-section ">
        <div id="cornerBlurTwo"></div>
         <div class="container">
           <div class="row align-items-center justify-content-center ">
@@ -144,57 +145,54 @@
 
       <!-- TABLO BULUNAN SECTION <div class="rounded-5 bg-secondary "> -->
 
-      <section class="mb-4"> 
+      <section class="mb-4 "> 
         <div class="container ">
-          <div class="rounded-5 bg-white py-5 table_location table-responsive ">
-          <div class="row gx-5 ">
-            <div class="col-sm-12 col-lg-4 border-end">
-              <div class=" text-center text-lg-start">
-              <table class="mx-auto" >
-                <thead class="opacity-75">
-                  <tr>
-                    <th><p class="text-black">🔥 Trending</p></th>
-                    <th></th>
-                    <th style="text-align: right;" ><a href="#" class="more"><p>More></p></a></th>
-                  </tr>
-                  <tr>
-                    <th class="fw-normal">Name</th>
-                    <th class="fw-normal">Price</th>                   
-                    <th class="fw-normal">Chart</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-bottom">
-                    <td><img src="images/bitcoin.jpg" alt=""> Bitcoin</td>
-                    <td><span class="plus">+</span>$43,180.13</td>                    
-                    <td><img src="images/positive_chart.jpg" alt=""></td>
-                  </tr>
-                  <tr class="border-bottom">
-                    <td><img src="images/ethereum.jpg" alt=""> Ethereum</td>
-                    <td><span class="decrease">+</span>$3,480.65</td>                   
-                    <td><img src="images/negative_chart.jpg" alt=""></td>
-                  </tr>
-                  <tr class="border-bottom" >
-                    <td><img src="images/solana.jpg" alt=""> Solana</td>
-                    <td><span class="plus">+</span>$150,20</td>                   
-                    <td><img src="images/positive_chart.jpg" alt=""></td>
-                  </tr>
-                  <tr class="border-bottom">
-                    <td><img src="images/Dogecoin.jpg" alt=""> Dogecoin</td>
-                    <td><span class="plus">+</span>$0,1572</td>                    
-                    <td><img src="images/positive_chart.jpg" alt=""></td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="rounded-5 bg-white py-5 table_location table-responsive shadow table-custom">
+          <div class="row gx-5 d-flex justify-content-center ">
+            <div class="col-sm-12 col-lg-6 col-xl-4 border-end">
+              <div class=" text-center text-lg-start mb-5 ">
+                <table class="mx-auto" style="height: 300px;">
+                  <thead class="opacity-75">
+                    <tr>
+                      <th><p class="text-black">🔥 Trending</p></th>
+                      <th></th>
+                      <th style="text-align: right;" ><a href="#" class="more"><p>More></p></a></th>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">Name</th>
+                      <th class="fw-normal">Price</th>                   
+                      <th class="fw-normal">Chart</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-bottom" >
+                      <td><img src="images/bitcoin.jpg" alt=""> Bitcoin</td>
+                      <td><span class="plus">+</span>$43,180.13</td>                    
+                      <td class="px-3"><img src="images/positive_chart.jpg" alt=""></td>
+                    </tr>
+                    <tr class="border-bottom">
+                      <td><img src="images/ethereum.jpg" alt=""> Ethereum</td>
+                      <td><span class="decrease">+</span>$3,480.65</td>                   
+                      <td class="px-3"><img src="images/negative_chart.jpg" alt=""></td>
+                    </tr>
+                    <tr class="border-bottom">
+                      <td><img src="images/solana.jpg" alt=""> Solana</td>
+                      <td><span class="plus">+</span>$150,20</td>                   
+                      <td class="px-3"><img src="images/positive_chart.jpg" alt=""></td>
+                    </tr>
+                    <tr >
+                      <td><img src="images/Dogecoin.jpg" alt=""> Dogecoin</td>
+                      <td><span class="plus">+</span>$0,1572</td>                    
+                      <td class="px-3"><img src="images/positive_chart.jpg" alt=""></td>
+                    </tr>
+                  </tbody>
+                </table>
+              
             </div>
 
 
             </div>
-            <div class="col-sm-12 col-lg-4 border-end">
-              <!-- <div class="d-flex justify-content-between">
-              <p>🚀 Top Gainers</p>
-              <a href="#">More></a>
-              </div> -->
+            <div class="col-sm-12 col-lg-6 col-xl-4 border-end">
               
               <div class="mb-5 text-center text-lg-start">
               <table class="mx-auto ">
@@ -214,22 +212,22 @@
                   <tr class="border-bottom" >
                     <td><img src="images/bitcoin.jpg" alt=""> Bitcoin</td>
                     <td><span class="plus">+</span>$43,180.13</td>                    
-                    <td><img src="images/positive_chart.jpg" alt=""></td>
+                    <td class="px-3"><img src="images/positive_chart.jpg" alt=""></td>
                   </tr>
                   <tr class="border-bottom">
                     <td><img src="images/ethereum.jpg" alt=""> Ethereum</td>
                     <td><span class="decrease">+</span>$3,480.65</td>                   
-                    <td><img src="images/negative_chart.jpg" alt=""></td>
+                    <td class="px-3"><img src="images/negative_chart.jpg" alt=""></td>
                   </tr>
                   <tr class="border-bottom">
                     <td><img src="images/solana.jpg" alt=""> Solana</td>
                     <td><span class="plus">+</span>$150,20</td>                   
-                    <td><img src="images/positive_chart.jpg" alt=""></td>
+                    <td class="px-3"><img src="images/positive_chart.jpg" alt=""></td>
                   </tr>
-                  <tr class="border-bottom">
+                  <tr >
                     <td><img src="images/Dogecoin.jpg" alt=""> Dogecoin</td>
                     <td><span class="plus">+</span>$0,1572</td>                    
-                    <td><img src="images/positive_chart.jpg" alt=""></td>
+                    <td class="px-3"><img src="images/positive_chart.jpg" alt=""></td>
                   </tr>
                 </tbody>
               </table>
@@ -238,55 +236,55 @@
 
 
             </div>
-            <div class="col-sm-12 col-lg-4 ">
-              <!-- <div class="d-flex justify-content-between">
-              <p>💎 Recently Added</p>
-              <a href="#">More></a>
-              </div> -->
+            
+            <div class="col-sm-12 col-lg-6 col-xl-4  ">
 
               <div class="mb-5 text-center text-lg-start">
-              <table class="mx-auto ">
-                <thead class="opacity-75">
-                  <tr>
-                    <th><p class="text-black">💎 Recently Added</p></th>
-                    <th></th>
-                    <th style="text-align: right;" ><a href="#" class="more"><p>More></p></a></th>
-                  </tr>
-                  <tr>
-                    <th class="fw-normal">Name</th>
-                    <th class="fw-normal">Price</th>                   
-                    <th class="fw-normal">Chart</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-bottom">
-                    <td><img src="images/bitcoin.jpg" alt=""> Bitcoin</td>
-                    <td><span class="plus">+</span>$43,180.13</td>                    
-                    <td><img src="images/positive_chart.jpg" alt=""></td>
-                  </tr>
-                  <tr class="border-bottom">
-                    <td><img src="images/ethereum.jpg" alt=""> Ethereum</td>
-                    <td><span class="decrease">+</span>$3,480.65</td>                   
-                    <td><img src="images/negative_chart.jpg" alt=""></td>
-                  </tr>
-                  <tr class="border-bottom">
-                    <td><img src="images/solana.jpg" alt=""> Solana</td>
-                    <td><span class="plus">+</span>$150,20</td>                   
-                    <td><img src="images/positive_chart.jpg" alt=""></td>
-                  </tr>
-                  <tr class="border-bottom">
-                    <td><img src="images/Dogecoin.jpg" alt=""> Dogecoin</td>
-                    <td><span class="plus">+</span>$0,1572</td>                    
-                    <td><img src="images/positive_chart.jpg" alt=""></td>
-                  </tr>
-                </tbody>
-              </table>
+
+                <table class="mx-auto ">
+                  <thead class="opacity-75">
+                    <tr>
+                      <th><p class="text-black">💎 Recently Added</p></th>
+                      <th></th>
+                      <th style="text-align: right;" ><a href="#" class="more"><p>More></p></a></th>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">Name</th>
+                      <th class="fw-normal">Price</th>                   
+                      <th class="fw-normal">Chart</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-bottom" >
+                      <td><img src="images/bitcoin.jpg" alt=""> Bitcoin</td>
+                      <td><span class="plus">+</span>$43,180.13</td>                    
+                      <td class="px-3"><img src="images/positive_chart.jpg" alt=""></td>
+                    </tr>
+                    <tr class="border-bottom">
+                      <td><img src="images/ethereum.jpg" alt=""> Ethereum</td>
+                      <td><span class="decrease">+</span>$3,480.65</td>                   
+                      <td class="px-3"><img src="images/negative_chart.jpg" alt=""></td>
+                    </tr>
+                    <tr class="border-bottom">
+                      <td><img src="images/solana.jpg" alt=""> Solana</td>
+                      <td><span class="plus">+</span>$150,20</td>                   
+                      <td class="px-3"><img src="images/positive_chart.jpg" alt=""></td>
+                    </tr>
+                    <tr >
+                      <td><img src="images/Dogecoin.jpg" alt=""> Dogecoin</td>
+                      <td><span class="plus">+</span>$0,1572</td>                    
+                      <td class="px-3"><img src="images/positive_chart.jpg" alt=""></td>
+                    </tr>
+                  </tbody>
+                </table>
+              
             </div>
 
 
 
 
             </div>
+            
           </div>
           </div>
         </div>
@@ -298,7 +296,7 @@
 
       <section>
         <div class="container">
-          <div class="row align-items-center justify-content-center">
+          <div class="row align-items-center justify-content-center ">
 
             <!-- <div class="col-sm-12 col-lg-6  order-sm-1 order-lg-2 order-xl-2 order-md-2 "> -->
             <div class="col-sm-12 col-lg-6  order-1 order-lg-2 ">
@@ -311,9 +309,8 @@
             <div class="col-sm-12 col-lg-6  order-2 order-lg-1 ">
               <div class="buy-text-content">
               <h2 class="fw-bolder ">Buy & trade on the original crypto exchange.</h2>
-              <p class="opacity-75">Buy now and get 40% extra bonus Minimum pre-sale amount 25 Crypto <br> Coin. We accept BTC crypto-currency</p>
+              <p class="opacity-75">Buy now and get 40% extra bonus Minimum pre-sale amount 25 Crypto Coin. <br class="d-lg-none d-sm-none  d-xxl-block"> We accept BTC crypto-currency</p>
               <br>
-
               <form class="my-3 deneme1 ">
                 <div class="d-flex gap-2">
                     <span class="label-wrapper">
@@ -339,45 +336,12 @@
                         </select>
                     </div>
                 </div>
-
-                <div class="d-flex align-items-xl-center  ">
+                <div class="d-flex  ">
                 <button type="button" class="btn btn-primary mt-4 rounded-pill " id="buyNow">
                     Buy Now
                 </button> 
-                </div>
-                <!-- <div class="d-flex align-items-xl-center  ">
-                <button type="button" class="btn btn-primary mt-4 rounded-pill " id="buyNow">
-                    Buy Now
-                </button> 
-                </div> -->
-                
-            </form>
-              <!-- <div class="d-flex align-items-center justify-content-center">
-                <div class="page-input-one">
-                  <form action="#">
-                    <input type="number" placeholder="Amount " class="mb-4" />                    
-                    <input type="number" placeholder="Get" />
-                  </form>
-                </div>
-                <div class="page-input-two">
-                  <form action="#">
-                    <select name="#" id="#" class="mb-4 d-flex">
-                      <option>🇺🇸 USD</option>
-                      <option>🇬🇧 EURO</option>
-                      <option>🇹🇷 TRY</option>
-                    </select>
-                    <select name="#" id="#">
-                      <option><img src="#" alt="#" />BTC</option>
-                      <option><img src="#" alt="#" />BNB</option>
-                      <option><img src="#" alt="#" />ETH</option>
-                    </select>
-                  </form>
-                </div>
-              </div>
-              <div class="d-flex justify-content-center align-items-center mt-5 ">
-              <button type="button" class="btn btn-primary btn-lg rounded-5 px-5">Buy Now</button>
-              </div>
-            </div> -->
+                </div>               
+            </form>             
           </div>
           </div>
         </div>
