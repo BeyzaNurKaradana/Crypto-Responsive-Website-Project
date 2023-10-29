@@ -1,36 +1,6 @@
 
-//abstracts
-/* @use "abstracts/mixins"; */
-/* @use "abstracts/variables"; */
-/* @use "abstracts/index"; */
-
-
-//base
-/* @use "base/typography"; */
-/* @use "base/index"; */
-
-
-//components
-/* @use "components/buttons"; */
-/* @use "components/images"; */
-/* @use "components/index"; */
-
-//layout
-/* @use "layout/navbar";
-@use "layout/header"; 
-@use "layout/section"; 
-@use "layout/footer";  */
-/* @use "layout/index"; */
-
-//pages
-/* @use "pages/home"; */
-/* @use "pages/index"; */
 
 @use "./abstracts";
- 
-/* @use "./base"; */
- 
-@use "./components";
  
 @use "./layout";
  
