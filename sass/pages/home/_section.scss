@@ -8,6 +8,31 @@
   @include mixins.big-input;
 }
 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 .highlight-words {
   background: var(
     --GRA-Blue2,
@@ -27,8 +52,8 @@
 }
 
 .Star_header {
-  bottom: 300px;
-  left: 350px;
+  bottom: 350px;
+  left: 420px;
 }
 
 .circle_header {
@@ -45,12 +70,39 @@
   text-decoration: none;
 }
 
+.section-creditcards{
+  h2{
+    font-size: 36px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+}
+
 .section-third {
   background-color: #f7f9fa;
+  h2{
+    font-size: 36px;
+  }
+
+  p{
+    font-size: 20px;
+  }
 }
 
 .section-fourth {
   background-color: #f7f9fa;
+  .col-lg-6{
+    padding-left: 70px;
+    padding-right: 70px;
+
+  }
+  h2{
+    font-size: 36px;
+  }
+
+  
 }
 
 .section-seventh {
@@ -64,7 +116,7 @@
   border: #dddddd solid 1px;
 }
 
-.deneme {
+.header-color {
   position: relative;
   &::before {
     content: "";
@@ -98,9 +150,42 @@
   color: #f4574d;
 }
 
+.section-seventh{
+  h2{
+    font-size: 36px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+
 .section-seventh-cols {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.questions_nefa{
+  h2{
+    font-size: 36px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+
+.section-industry{
+  h2{
+    font-size: 36px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+  .col-lg-6{
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
 }
 
 .section-seventh-arrow-first {
@@ -309,6 +394,12 @@
   @media (min-width: 768px) and (max-width: 992px) {
     padding-left: 4rem;
   }
+  h2{
+    font-size:36px ;
+  }
+  p{
+    font-size: 18px;
+  }
 }
 
 nav {
@@ -387,11 +478,18 @@ table{
   
 }
 
+.more_link{
+  text-align: right;
+}
+
 .buy-text-content {
   @media (min-width: 768px) and (max-width: 992px) {
     padding-left: 4rem;
   }
 }
 
+#table-container{
+  max-width: 90%;
+}
 
 

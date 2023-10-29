@@ -33,13 +33,27 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-    }
-    .header-button {
-      margin: 5px;
+     }
+     .header-button {
+       margin: 5px;
     }
   }
 
   .header-section{
     width: 100%;
-    min-height: 700px;
+    min-height: 800px;
+    @media(max-width:768px){
+      min-height: 950px;
+
+  }
+    
+
+  h1{
+      font-size: 4rem;
+  }
+    p{
+      font-size: 20px;
+    }
   } 
+
+  
