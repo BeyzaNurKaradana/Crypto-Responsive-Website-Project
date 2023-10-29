@@ -5,13 +5,6 @@ body {
   overflow-x: hidden !important;
 }
 
-.page-input-two select {
-  @include mixins.center-input;
-}
-.page-input-one input {
-  @include mixins.big-input;
-}
-
 .accordion {
   background-color: #eee;
   color: #444;
