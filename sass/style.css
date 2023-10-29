@@ -207,6 +207,16 @@ $btn-radius: 40px; */
 
 .section-third {
   background-color: #f7f9fa;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 992px) {
+  .section-third {
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .section-third h2 {
   font-size: 36px;
@@ -217,6 +227,16 @@ $btn-radius: 40px; */
 
 .section-fourth {
   background-color: #f7f9fa;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 992px) {
+  .section-fourth {
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .section-fourth .col-lg-6 {
   padding-left: 70px;
@@ -228,6 +248,16 @@ $btn-radius: 40px; */
 
 .section-seventh {
   background-color: #f7f9fa;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 992px) {
+  .section-seventh {
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .up-button {

@@ -82,6 +82,15 @@
 
 .section-third {
   background-color: #f7f9fa;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media(max-width:992px){
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   h2{
     font-size: 36px;
   }
@@ -89,10 +98,20 @@
   p{
     font-size: 20px;
   }
+  
 }
 
 .section-fourth {
   background-color: #f7f9fa;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media(max-width:992px){
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .col-lg-6{
     padding-left: 70px;
     padding-right: 70px;
@@ -107,6 +126,15 @@
 
 .section-seventh {
   background-color: #f7f9fa;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media(max-width:992px){
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
 }
 
 .up-button {
